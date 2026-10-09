@@ -4,8 +4,6 @@
 
 ## Запуск
 
-Нужен Node.js `22.18.0`. Версия зафиксирована в `.nvmrc`.
-
 ```bash
 npm ci
 npm run dev
