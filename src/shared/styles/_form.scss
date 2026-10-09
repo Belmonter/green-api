@@ -1,0 +1,45 @@
+@mixin alert {
+  margin: 0;
+  padding: 12px;
+  border-radius: 10px;
+  background: #fdecec;
+  color: #9b1c1c;
+  font-size: 14px;
+}
+
+@mixin actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+@mixin button {
+  min-height: 44px;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@mixin submit {
+  @include button;
+  flex: 1 1 160px;
+  border: 0;
+  background: #2f6fed;
+  color: #fff;
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+}
+
+@mixin cancel {
+  @include button;
+  flex: 1 1 120px;
+  border: 1px solid #c5c9d1;
+  background: #fff;
+  color: #1c1e21;
+}

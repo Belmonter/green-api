@@ -1,0 +1,28 @@
+@use '../../../../shared/styles/form' as form;
+
+.form {
+  display: grid;
+  gap: 16px;
+}
+
+.heading {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.alert {
+  @include form.alert;
+}
+
+.actions {
+  @include form.actions;
+}
+
+.submit {
+  @include form.submit;
+}
+
+.cancel {
+  @include form.cancel;
+}

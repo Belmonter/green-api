@@ -1,0 +1,18 @@
+.retry {
+  justify-self: end;
+  min-height: 36px;
+  padding: 8px 12px;
+  border: 1px solid #c5c9d1;
+  border-radius: 10px;
+  background: #fff;
+  color: #1c1e21;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.retry:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}

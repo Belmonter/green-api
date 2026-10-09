@@ -1,0 +1,43 @@
+@use '../../../../shared/styles/form' as form;
+
+.form {
+  display: grid;
+  gap: 16px;
+}
+
+.lead {
+  margin: 0;
+  color: #5c6370;
+  font-size: 14px;
+}
+
+.settings {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 16px 0 0;
+  border: 0;
+  border-top: 1px solid #e6e8ee;
+}
+
+.legend {
+  padding: 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.alert {
+  @include form.alert;
+}
+
+.actions {
+  @include form.actions;
+}
+
+.submit {
+  @include form.submit;
+}
+
+.cancel {
+  @include form.cancel;
+}
